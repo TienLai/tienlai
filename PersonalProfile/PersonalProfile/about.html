@@ -1,0 +1,1387 @@
+                                                                                <!DOCTYPE html>
+                                                                                <html lang="en">
+                                                                                <head>
+                                                                                    <meta charset="UTF-8">
+                                                                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                                                    <meta name="description" content="Tien Lai - Finance & Investment Technologist with expertise in private equity and technological innovation">
+                                                                                    <title>About Me - Tien Lai</title>
+                                                                                    <style>
+                                                                                        * {
+                                                                                            margin: 0;
+                                                                                            padding: 0;
+                                                                                            box-sizing: border-box;
+                                                                                            font-family: 'Arial', sans-serif;
+                                                                                        }
+
+                                                                                        :root {
+                                                                                            --primary-color: #94df66;
+                                                                                            --primary-light: rgba(148, 223, 102, 0.1);
+                                                                                            --primary-border: rgba(148, 223, 102, 0.3);
+                                                                                            --secondary-color: #50a830;
+                                                                                            --bg-dark: #1a1a1a;
+                                                                                            --text-light: #f5f5f5;
+                                                                                            --text-dark: #333;
+                                                                                            --section-bg: rgba(255, 255, 255, 0.95);
+                                                                                            --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                                                                                            --border-radius: 10px;
+                                                                                            --transition: all 0.3s ease;
+                                                                                        }
+
+                                                                                        body {
+                                                                                            background-color: var(--bg-dark);
+                                                                                            color: var(--text-light);
+                                                                                            line-height: 1.6;
+                                                                                        }
+
+                                                                                        body.light-mode {
+                                                                                            --bg-dark: #f5f5f5;
+                                                                                            --text-light: #333;
+                                                                                            --section-bg: rgba(255, 255, 255, 1);
+                                                                                            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                                                                                        }
+
+                                                                                        .container {
+                                                                                            max-width: 1200px;
+                                                                                            margin: 0 auto;
+                                                                                            padding: 0 20px;
+                                                                                        }
+
+                                                                                        /* Accessibility Focus Styles */
+                                                                                        a:focus, button:focus {
+                                                                                            outline: 2px solid var(--primary-color);
+                                                                                            outline-offset: 3px;
+                                                                                        }
+
+                                                                                        .sr-only {
+                                                                                            position: absolute;
+                                                                                            width: 1px;
+                                                                                            height: 1px;
+                                                                                            padding: 0;
+                                                                                            margin: -1px;
+                                                                                            overflow: hidden;
+                                                                                            clip: rect(0, 0, 0, 0);
+                                                                                            white-space: nowrap;
+                                                                                            border-width: 0;
+                                                                                        }
+
+                                                                                        /* Header and Navigation */
+                                                                                        header {
+                                                                                            background-color: rgba(0, 0, 0, 0.8);
+                                                                                            backdrop-filter: blur(10px);
+                                                                                            -webkit-backdrop-filter: blur(10px);
+                                                                                            position: fixed;
+                                                                                            width: 100%;
+                                                                                            top: 0;
+                                                                                            z-index: 1000;
+                                                                                            padding: 1rem 0;
+                                                                                            border-bottom: 1px solid var(--primary-border);
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        body.light-mode header {
+                                                                                            background-color: rgba(245, 245, 245, 0.8);
+                                                                                        }
+
+                                                                                        header.scrolled {
+                                                                                            padding: 0.7rem 0;
+                                                                                            background-color: rgba(0, 0, 0, 0.95);
+                                                                                        }
+
+                                                                                        body.light-mode header.scrolled {
+                                                                                            background-color: rgba(245, 245, 245, 0.95);
+                                                                                        }
+
+                                                                                        .navbar {
+                                                                                            display: flex;
+                                                                                            justify-content: space-between;
+                                                                                            align-items: center;
+                                                                                        }
+
+                                                                                        .logo {
+                                                                                            color: var(--primary-color);
+                                                                                            text-decoration: none;
+                                                                                            font-size: 1.8rem;
+                                                                                            font-weight: 700;
+                                                                                            letter-spacing: 2px;
+                                                                                            transition: var(--transition);
+                                                                                            position: relative;
+                                                                                            padding: 0.3rem 0;
+                                                                                        }
+
+                                                                                        .logo:hover {
+                                                                                            color: #fff;
+                                                                                            transform: translateY(-3px);
+                                                                                        }
+
+                                                                                        body.light-mode .logo:hover {
+                                                                                            color: #333;
+                                                                                        }
+
+                                                                                        .logo::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            width: 0;
+                                                                                            height: 2px;
+                                                                                            bottom: 0;
+                                                                                            left: 0;
+                                                                                            background-color: var(--primary-color);
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .logo:hover::after {
+                                                                                            width: 100%;
+                                                                                        }
+
+                                                                                        .nav-links {
+                                                                                            display: flex;
+                                                                                            gap: 2rem;
+                                                                                        }
+
+                                                                                        .nav-link {
+                                                                                            color: var(--text-light);
+                                                                                            text-decoration: none;
+                                                                                            font-size: 1rem;
+                                                                                            transition: var(--transition);
+                                                                                            padding: 0.5rem 1rem;
+                                                                                            border-radius: 20px;
+                                                                                            position: relative;
+                                                                                        }
+
+                                                                                        .nav-link:hover, .nav-link.active {
+                                                                                            color: var(--primary-color);
+                                                                                            background: var(--primary-light);
+                                                                                            transform: translateY(-3px);
+                                                                                        }
+
+                                                                                        .nav-link.active::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            bottom: -2px;
+                                                                                            left: 50%;
+                                                                                            transform: translateX(-50%);
+                                                                                            width: 30px;
+                                                                                            height: 2px;
+                                                                                            background-color: var(--primary-color);
+                                                                                        }
+
+                                                                                        /* Hero Section */
+                                                                                        .hero {
+                                                                                            height: 50vh;
+                                                                                            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('forest-bg.jpg');
+                                                                                            background-size: cover;
+                                                                                            background-position: center;
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: center;
+                                                                                            text-align: center;
+                                                                                            position: relative;
+                                                                                            margin-bottom: 2rem;
+                                                                                        }
+
+                                                                                        body.light-mode .hero {
+                                                                                            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('forest-bg.jpg');
+                                                                                            background-size: cover;
+                                                                                            background-position: center;
+                                                                                        }
+
+                                                                                        .hero::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            bottom: 0;
+                                                                                            left: 0;
+                                                                                            width: 100%;
+                                                                                            height: 50px;
+                                                                                            background: linear-gradient(to top, var(--bg-dark), transparent);
+                                                                                        }
+
+                                                                                        .hero-content {
+                                                                                            max-width: 800px;
+                                                                                            padding: 0 20px;
+                                                                                            padding-top: 125px;
+                                                                                            animation: fadeIn 1s ease;
+                                                                                            position: relative;
+                                                                                            z-index: 2;
+                                                                                        }
+
+                                                                                        @keyframes fadeIn {
+                                                                                            from { opacity: 0; transform: translateY(20px); }
+                                                                                            to { opacity: 1; transform: translateY(0); }
+                                                                                        }
+
+                                                                                        .hero h1 {
+                                                                                            font-size: 3.5rem;
+                                                                                            font-weight: 700;
+                                                                                            color: var(--primary-color);
+                                                                                            margin-bottom: 1rem;
+                                                                                            letter-spacing: 2px;
+                                                                                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                                                                                        }
+
+                                                                                        .hero p {
+                                                                                            font-size: 1.3rem;
+                                                                                            color: var(--text-light);
+                                                                                            margin-bottom: 2rem;
+                                                                                            max-width: 600px;
+                                                                                            margin-left: auto;
+                                                                                            margin-right: auto;
+                                                                                        }
+
+                                                                                        body.light-mode .hero p {
+                                                                                            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                                                                                        }
+
+                                                                                        /* Resume Container */
+                                                                                        .resume-container {
+                                                                                            background-color: var(--section-bg);
+                                                                                            border-radius: var(--border-radius);
+                                                                                            color: var(--text-dark);
+                                                                                            padding: 3rem;
+                                                                                            margin-bottom: 3rem;
+                                                                                            box-shadow: var(--shadow);
+                                                                                            animation: slideUp 0.8s ease;
+                                                                                            position: relative;
+                                                                                            overflow: hidden;
+                                                                                        }
+
+                                                                                        @keyframes slideUp {
+                                                                                            from { opacity: 0; transform: translateY(40px); }
+                                                                                            to { opacity: 1; transform: translateY(0); }
+                                                                                        }
+
+                                                                                        .resume-container::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            top: 0;
+                                                                                            left: 0;
+                                                                                            width: 5px;
+                                                                                            height: 100%;
+                                                                                            background: linear-gradient(to bottom, var(--primary-color), transparent);
+                                                                                        }
+
+                                                                                        /* Section Styling */
+                                                                                        .section-title {
+                                                                                            color: var(--text-dark);
+                                                                                            margin-bottom: 2rem;
+                                                                                            padding-bottom: 0.5rem;
+                                                                                            border-bottom: 2px solid var(--primary-border);
+                                                                                            position: relative;
+                                                                                            font-weight: 700;
+                                                                                        }
+
+                                                                                        .section-title::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            left: 0;
+                                                                                            bottom: -2px;
+                                                                                            width: 50px;
+                                                                                            height: 3px;
+                                                                                            background-color: var(--primary-color);
+                                                                                        }
+
+                                                                                        .resume-section {
+                                                                                            margin-bottom: 2.5rem;
+                                                                                            position: relative;
+                                                                                        }
+
+                                                                                        /* Collapsible Section Styles */
+                                                                                        .collapsible-header {
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: space-between;
+                                                                                            cursor: pointer;
+                                                                                            padding: 1rem 0;
+                                                                                            margin-bottom: 1rem;
+                                                                                            border-bottom: 2px solid var(--primary-border);
+                                                                                            position: relative;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .collapsible-header:hover {
+                                                                                            color: var(--primary-color);
+                                                                                        }
+
+                                                                                        .collapsible-header::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            left: 0;
+                                                                                            bottom: -2px;
+                                                                                            width: 50px;
+                                                                                            height: 3px;
+                                                                                            background-color: var(--primary-color);
+                                                                                        }
+
+                                                                                        .collapsible-header h2 {
+                                                                                            font-weight: 700;
+                                                                                            margin: 0;
+                                                                                        }
+
+                                                                                        .collapsible-icon {
+                                                                                            width: 20px;
+                                                                                            height: 20px;
+                                                                                            position: relative;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .collapsible-icon::before,
+                                                                                        .collapsible-icon::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            background-color: var(--text-dark);
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .collapsible-icon::before {
+                                                                                            width: 100%;
+                                                                                            height: 2px;
+                                                                                            top: 50%;
+                                                                                            left: 0;
+                                                                                            transform: translateY(-50%);
+                                                                                        }
+
+                                                                                        .collapsible-icon::after {
+                                                                                            width: 2px;
+                                                                                            height: 100%;
+                                                                                            left: 50%;
+                                                                                            top: 0;
+                                                                                            transform: translateX(-50%);
+                                                                                        }
+
+                                                                                        .collapsible-header.active .collapsible-icon::after {
+                                                                                            transform: translateX(-50%) rotate(90deg);
+                                                                                            opacity: 0;
+                                                                                        }
+
+                                                                                        .collapsible-content {
+                                                                                            max-height: 0;
+                                                                                            overflow: hidden;
+                                                                                            transition: max-height 0.5s ease;
+                                                                                            padding-top: 0;
+                                                                                            padding-bottom: 0;
+                                                                                        }
+
+                                                                                        /* Ensure the content is visible when active */
+                                                                                        .collapsible-header.active + .collapsible-content {
+                                                                                            max-height: 2000px; /* Use a large value that will contain your content */
+                                                                                            padding-top: 1rem;
+                                                                                            padding-bottom: 1rem;
+                                                                                        }
+
+                                                                                        /* Enhanced Resume Items */
+                                                                                        .resume-item {
+                                                                                            margin-bottom: 1.5rem;
+                                                                                            padding-left: 1.5rem;
+                                                                                            border-left: 2px solid #ddd;
+                                                                                            position: relative;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .resume-item:hover {
+                                                                                            border-left: 2px solid var(--primary-color);
+                                                                                            transform: translateX(5px);
+                                                                                        }
+
+                                                                                        .resume-item::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            width: 16px;
+                                                                                            height: 16px;
+                                                                                            border-radius: 50%;
+                                                                                            background-color: var(--primary-color);
+                                                                                            left: -9px;
+                                                                                            top: 8px;
+                                                                                            transition: var(--transition);
+                                                                                            box-shadow: 0 0 0 5px var(--primary-light);
+                                                                                        }
+
+                                                                                        .resume-item:hover::before {
+                                                                                            transform: scale(1.2);
+                                                                                        }
+
+                                                                                        .resume-title {
+                                                                                            font-size: 1.2rem;
+                                                                                            font-weight: 600;
+                                                                                            margin-bottom: 0.5rem;
+                                                                                            color: var(--text-dark);
+                                                                                        }
+
+                                                                                        .resume-subtitle {
+                                                                                            font-size: 1rem;
+                                                                                            font-weight: 500;
+                                                                                            color: #444;
+                                                                                            margin-bottom: 0.5rem;
+                                                                                        }
+
+                                                                                        .resume-date {
+                                                                                            font-size: 0.9rem;
+                                                                                            color: #666;
+                                                                                            margin-bottom: 0.8rem;
+                                                                                            display: inline-block;
+                                                                                            padding: 0.2rem 0.8rem;
+                                                                                            background-color: var(--primary-light);
+                                                                                            border-radius: 4px;
+                                                                                        }
+
+                                                                                        .resume-description {
+                                                                                            margin-top: 0.8rem;
+                                                                                        }
+
+                                                                                        .resume-description ul {
+                                                                                            padding-left: 1.5rem;
+                                                                                        }
+
+                                                                                        .resume-description li {
+                                                                                            margin-bottom: 0.8rem;
+                                                                                            position: relative;
+                                                                                        }
+
+                                                                                        .resume-description li::before {
+                                                                                            content: '•';
+                                                                                            color: var(--primary-color);
+                                                                                            font-weight: bold;
+                                                                                            position: absolute;
+                                                                                            left: -1rem;
+                                                                                        }
+
+                                                                                        /* Introduction Section Enhancement */
+                                                                                        .intro-container {
+                                                                                            display: flex;
+                                                                                            gap: 2.5rem;
+                                                                                            align-items: flex-start;
+                                                                                            margin-bottom: 2rem;
+                                                                                        }
+
+                                                                                        .profile-image {
+                                                                                            flex-shrink: 0;
+                                                                                            width: 220px;
+                                                                                            height: 300px;  /* Increased from 220px to 300px to prevent cutting off the head */
+                                                                                            border-radius: 8px;
+                                                                                            overflow: hidden;
+                                                                                            box-shadow: var(--shadow);
+                                                                                            border: 3px solid var(--primary-color);
+                                                                                            position: relative;
+                                                                                        }
+
+                                                                                        .profile-image img {
+                                                                                            width: 100%;
+                                                                                            height: 100%;
+                                                                                            object-fit: cover;
+                                                                                            transition: transform 0.5s ease;
+                                                                                        }
+
+                                                                                        .profile-image:hover img {
+                                                                                            transform: scale(1.08);
+                                                                                        }
+
+                                                                                        .profile-image::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            width: 100%;
+                                                                                            height: 100%;
+                                                                                            top: 10px;
+                                                                                            left: 10px;
+                                                                                            border: 1px solid var(--primary-color);
+                                                                                            border-radius: 8px;
+                                                                                            z-index: -1;
+                                                                                            opacity: 0;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .profile-image:hover::after {
+                                                                                            opacity: 1;
+                                                                                        }
+
+                                                                                        .intro-text {
+                                                                                            flex-grow: 1;
+                                                                                        }
+
+                                                                                        .intro-text h3 {
+                                                                                            color: var(--primary-color);
+                                                                                            margin-bottom: 1.2rem;
+                                                                                            font-size: 1.5rem;
+                                                                                            position: relative;
+                                                                                            display: inline-block;
+                                                                                            padding-bottom: 0.5rem;
+                                                                                        }
+
+                                                                                        .intro-text h3::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            bottom: 0;
+                                                                                            left: 0;
+                                                                                            width: 50px;
+                                                                                            height: 2px;
+                                                                                            background-color: var(--primary-color);
+                                                                                        }
+
+                                                                                        .intro-text p {
+                                                                                            margin-bottom: 1rem;
+                                                                                            line-height: 1.8;
+                                                                                        }
+
+                                                                                        /* Enhanced Statistics with Swipe Animation */
+                                                                                        .statistics {
+                                                                                            display: grid;
+                                                                                            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                                                                            gap: 2rem;
+                                                                                            margin-top: 2rem;
+                                                                                        }
+
+                                                                                        .statistic {
+                                                                                            text-align: center;
+                                                                                            padding: 2rem;
+                                                                                            background-color: white;
+                                                                                            border-radius: var(--border-radius);
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                                                                                            transition: var(--transition);
+                                                                                            position: relative;
+                                                                                            overflow: hidden;
+                                                                                            z-index: 1;
+                                                                                        }
+
+                                                                                        .statistic::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            top: 0;
+                                                                                            left: -100%;
+                                                                                            width: 100%;
+                                                                                            height: 100%;
+                                                                                            background: linear-gradient(90deg, transparent, rgba(148, 223, 102, 0.2), transparent);
+                                                                                            transition: 0.5s;
+                                                                                            z-index: -1;
+                                                                                        }
+
+                                                                                        .statistic:hover::before {
+                                                                                            left: 100%;
+                                                                                        }
+
+                                                                                        .statistic:hover {
+                                                                                            transform: translateY(-10px);
+                                                                                            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+                                                                                        }
+
+                                                                                        .statistic::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            width: 0;
+                                                                                            height: 3px;
+                                                                                            bottom: 0;
+                                                                                            left: 0;
+                                                                                            background-color: var(--primary-color);
+                                                                                            transition: width 0.3s ease;
+                                                                                        }
+
+                                                                                        .statistic:hover::after {
+                                                                                            width: 100%;
+                                                                                        }
+
+                                                                                        .stat-number {
+                                                                                            font-size: 2.5rem;
+                                                                                            font-weight: 700;
+                                                                                            color: var(--primary-color);
+                                                                                            margin-bottom: 0.5rem;
+                                                                                        }
+
+                                                                                        .stat-text {
+                                                                                            color: #444;
+                                                                                            font-weight: 500;
+                                                                                        }
+
+                                                                                        /* Enhanced Skills Section */
+                                                                                        .skills-categories {
+                                                                                            display: grid;
+                                                                                            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                                                                                            gap: 2rem;
+                                                                                            margin-top: 1.5rem;
+                                                                                        }
+
+                                                                                        .skills-category {
+                                                                                            margin-bottom: 1.5rem;
+                                                                                        }
+
+                                                                                        .skills-category h3 {
+                                                                                            margin-bottom: 1rem;
+                                                                                            font-size: 1.2rem;
+                                                                                            color: #444;
+                                                                                            position: relative;
+                                                                                            display: inline-block;
+                                                                                            padding-bottom: 0.5rem;
+                                                                                        }
+
+                                                                                        .skills-category h3::after {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            bottom: 0;
+                                                                                            left: 0;
+                                                                                            width: 30px;
+                                                                                            height: 2px;
+                                                                                            background-color: var(--primary-color);
+                                                                                        }
+
+                                                                                        .skills-container {
+                                                                                            display: flex;
+                                                                                            flex-wrap: wrap;
+                                                                                            gap: 1rem;
+                                                                                            margin-top: 1rem;
+                                                                                        }
+
+                                                                                        .skill-item {
+                                                                                            background-color: var(--primary-light);
+                                                                                            border: 1px solid var(--primary-border);
+                                                                                            color: #444;
+                                                                                            padding: 0.5rem 1rem;
+                                                                                            border-radius: 20px;
+                                                                                            font-size: 0.9rem;
+                                                                                            transition: var(--transition);
+                                                                                            display: inline-flex;
+                                                                                            align-items: center;
+                                                                                        }
+
+                                                                                        .skill-item:hover {
+                                                                                            background-color: var(--primary-color);
+                                                                                            color: white;
+                                                                                            transform: translateY(-3px);
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                                                                                        }
+
+                                                                                        /* Progress bars for skills */
+                                                                                        .skill-with-level {
+                                                                                            margin-bottom: 1.2rem;
+                                                                                        }
+
+                                                                                        .skill-header {
+                                                                                            display: flex;
+                                                                                            justify-content: space-between;
+                                                                                            margin-bottom: 0.5rem;
+                                                                                        }
+
+                                                                                        .skill-name {
+                                                                                            font-weight: 500;
+                                                                                            color: var(--text-dark);
+                                                                                        }
+
+                                                                                        .skill-level {
+                                                                                            color: #666;
+                                                                                        }
+
+                                                                                        .progress-bar {
+                                                                                            width: 100%;
+                                                                                            height: 8px;
+                                                                                            background-color: #eee;
+                                                                                            border-radius: 4px;
+                                                                                            overflow: hidden;
+                                                                                        }
+
+                                                                                        .progress {
+                                                                                            height: 100%;
+                                                                                            background-color: var(--primary-color);
+                                                                                            border-radius: 4px;
+                                                                                            width: 0;
+                                                                                            transition: width 1s ease;
+                                                                                        }
+
+                                                                                        /* Contact Section Enhancement */
+                                                                                        .contact-info {
+                                                                                            display: flex;
+                                                                                            flex-wrap: wrap;
+                                                                                            gap: 2rem;
+                                                                                            margin-top: 1.5rem;
+                                                                                        }
+
+                                                                                        .contact-item {
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            gap: 0.8rem;
+                                                                                            transition: var(--transition);
+                                                                                            padding: 0.8rem 1.2rem;
+                                                                                            border-radius: var(--border-radius);
+                                                                                            background-color: rgba(255, 255, 255, 0.7);
+                                                                                        }
+
+                                                                                        .contact-item:hover {
+                                                                                            transform: translateY(-5px);
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                                                                                        }
+
+                                                                                        .contact-icon {
+                                                                                            color: var(--primary-color);
+                                                                                            font-size: 1.5rem;
+                                                                                            background-color: var(--primary-light);
+                                                                                            width: 40px;
+                                                                                            height: 40px;
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: center;
+                                                                                            border-radius: 50%;
+                                                                                        }
+
+                                                                                        /* Footer Enhancement */
+                                                                                        footer {
+                                                                                            text-align: center;
+                                                                                            padding: 2rem 0;
+                                                                                            background-color: rgba(0, 0, 0, 0.8);
+                                                                                            color: var(--text-light);
+                                                                                            position: relative;
+                                                                                        }
+
+                                                                                        body.light-mode footer {
+                                                                                            background-color: rgba(245, 245, 245, 0.9);
+                                                                                            color: var(--text-dark);
+                                                                                        }
+
+                                                                                        footer::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            top: 0;
+                                                                                            left: 0;
+                                                                                            width: 100%;
+                                                                                            height: 5px;
+                                                                                            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+                                                                                        }
+
+                                                                                        .social-links {
+                                                                                            display: flex;
+                                                                                            justify-content: center;
+                                                                                            gap: 1.5rem;
+                                                                                            margin-bottom: 1.5rem;
+                                                                                        }
+
+                                                                                        .social-link {
+                                                                                            width: 45px;
+                                                                                            height: 45px;
+                                                                                            border-radius: 50%;
+                                                                                            background-color: rgba(255, 255, 255, 0.1);
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: center;
+                                                                                            color: var(--text-light);
+                                                                                            text-decoration: none;
+                                                                                            transition: var(--transition);
+                                                                                            position: relative;
+                                                                                            overflow: hidden;
+                                                                                        }
+
+                                                                                        body.light-mode .social-link {
+                                                                                            background-color: rgba(0, 0, 0, 0.1);
+                                                                                            color: var(--text-dark);
+                                                                                        }
+
+                                                                                        .social-link::before {
+                                                                                            content: '';
+                                                                                            position: absolute;
+                                                                                            width: 100%;
+                                                                                            height: 100%;
+                                                                                            background-color: var(--primary-color);
+                                                                                            top: 100%;
+                                                                                            left: 0;
+                                                                                            transition: var(--transition);
+                                                                                            z-index: 0;
+                                                                                        }
+
+                                                                                        .social-link:hover::before {
+                                                                                            top: 0;
+                                                                                        }
+
+                                                                                        .social-link svg {
+                                                                                            position: relative;
+                                                                                            z-index: 1;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .social-link:hover {
+                                                                                            transform: translateY(-5px);
+                                                                                            color: var(--bg-dark);
+                                                                                        }
+
+                                                                                        /* Back to Top Button (New) */
+                                                                                        .back-to-top {
+                                                                                            position: fixed;
+                                                                                            bottom: 30px;
+                                                                                            right: 30px;
+                                                                                            width: 50px;
+                                                                                            height: 50px;
+                                                                                            background-color: var(--primary-color);
+                                                                                            color: var(--bg-dark);
+                                                                                            border-radius: 50%;
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: center;
+                                                                                            text-decoration: none;
+                                                                                            z-index: 99;
+                                                                                            opacity: 0;
+                                                                                            visibility: hidden;
+                                                                                            transition: var(--transition);
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                                                                                        }
+
+                                                                                        .back-to-top.visible {
+                                                                                            opacity: 1;
+                                                                                            visibility: visible;
+                                                                                        }
+
+                                                                                        .back-to-top:hover {
+                                                                                            background-color: var(--secondary-color);
+                                                                                            transform: translateY(-3px);
+                                                                                        }
+
+                                                                                        /* Theme Toggle (New) */
+                                                                                        .theme-toggle {
+                                                                                            position: fixed;
+                                                                                            bottom: 30px;
+                                                                                            left: 30px;
+                                                                                            width: 50px;
+                                                                                            height: 50px;
+                                                                                            background-color: var(--primary-color);
+                                                                                            color: var(--bg-dark);
+                                                                                            border-radius: 50%;
+                                                                                            border: none;
+                                                                                            display: flex;
+                                                                                            align-items: center;
+                                                                                            justify-content: center;
+                                                                                            z-index: 99;
+                                                                                            cursor: pointer;
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        .theme-toggle:hover {
+                                                                                            background-color: var(--secondary-color);
+                                                                                            transform: translateY(-3px);
+                                                                                        }
+
+                                                                                        .dark-icon, .light-icon {
+                                                                                            position: absolute;
+                                                                                            transition: var(--transition);
+                                                                                        }
+
+                                                                                        @media (max-width: 768px) {
+                                                                                            .navbar {
+                                                                                                flex-direction: column;
+                                                                                                gap: 1rem;
+                                                                                            }
+
+                                                                                            .nav-links {
+                                                                                                width: 100%;
+                                                                                                justify-content: center;
+                                                                                                gap: 1rem;
+                                                                                            }
+
+                                                                                            .hero h1 {
+                                                                                                font-size: 2.5rem;
+                                                                                            }
+
+                                                                                            .resume-container {
+                                                                                                padding: 2rem;
+                                                                                            }
+
+                                                                                            .intro-container {
+                                                                                                flex-direction: column;
+                                                                                                align-items: center;
+                                                                                                text-align: center;
+                                                                                            }
+
+                                                                                            .profile-image {
+                                                                                                margin-bottom: 1.5rem;
+                                                                                            }
+
+                                                                                            .intro-text h3::after {
+                                                                                                left: 50%;
+                                                                                                transform: translateX(-50%);
+                                                                                            }
+
+                                                                                            .skills-categories {
+                                                                                                grid-template-columns: 1fr;
+                                                                                            }
+
+                                                                                            .statistics {
+                                                                                                grid-template-columns: 1fr;
+                                                                                            }
+
+                                                                                            .theme-toggle, .back-to-top {
+                                                                                                width: 45px;
+                                                                                                height: 45px;
+                                                                                            }
+                                                                                        }
+                                                                                    </style>
+                                                                                </head>
+                                                                                <body>
+                                                                                    <header id="header">
+                                                                                        <div class="container">
+                                                                                            <nav class="navbar">
+                                                                                                <a href="index.html" class="logo" aria-label="Tien Lai Homepage">TIEN LAI</a>
+                                                                                                <div class="nav-links">
+                                                                                                    <a href="index.html" class="nav-link">Home</a>
+                                                                                                    <a href="about.html" class="nav-link active" aria-current="page">About Me</a>
+                                                                                                    <a href="projects.html" class="nav-link">Projects</a>
+                                                                                                    <a href="journey.html" class="nav-link">Journey</a>
+                                                                                                </div>
+                                                                                            </nav>
+                                                                                        </div>
+                                                                                    </header>
+
+                                                                                    <section class="hero" role="banner">
+                                                                                        <div class="hero-content">
+                                                                                            <h1>The Golden Era for Founders and Investors</h1>
+                                                                                        </div>
+                                                                                    </section>
+
+                                                                                    <main id="main-content" role="main">
+                                                                                        <div class="container">
+                                                                                            <div class="resume-container">
+                                                                                                <section class="resume-section" id="introduction" aria-labelledby="intro-title">
+                                                                                                    <h2 class="section-title" id="intro-title">Introduction</h2>
+                                                                                                    <div class="intro-container">
+                                                                                                        <div class="profile-image">
+                                                                                                            <img src="Headshot.jpg" alt="Tien Lai professional headshot" width="220" height="220">
+                                                                                                        </div>
+                                                                                                        <div class="intro-text">
+                                                                                                            <h3>Finance and Investment Technologist</h3>
+                                                                                                            <p>I'm a financial technologist driven by the intersection of investment strategy and technological innovation. My unique background combines actuarial mathematics with information systems, allowing me to approach investment opportunities with analytical precision.</p>
+                                                                                                            <p>My passion lies in private equity and venture capital, where I excel at identifying growth opportunities and conducting comprehensive due diligence. I'm fascinated by how PE/VC partners dissect businesses and uncover hidden value.</p>
+
+                                                                                                            <!-- Enhanced Statistics with Swipe Animation -->
+                                                                                                            <div class="statistics">
+                                                                                                                <div class="statistic">
+                                                                                                                    <div class="stat-number" id="projectsCount">12+</div>
+                                                                                                                    <div class="stat-text">Projects Completed</div>
+                                                                                                                </div>
+                                                                                                                <div class="statistic">
+                                                                                                                    <div class="stat-number" id="experienceYears">3+</div>
+                                                                                                                    <div class="stat-text">Years Experience</div>
+                                                                                                                </div>
+                                                                                                                <div class="statistic">
+                                                                                                                    <div class="stat-number" id="investmentSize">$71M+</div>
+                                                                                                                    <div class="stat-text">Bond Offering</div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Professional Experience (First) -->
+                                                                                                <section class="resume-section" id="experience">
+                                                                                                    <div class="collapsible-header">
+                                                                                                        <h2 id="experience-title">Professional Experience</h2>
+                                                                                                        <div class="collapsible-icon"></div>
+                                                                                                    </div>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">Financial Service Officer</div>
+                                                                                                            <div class="resume-subtitle">Ernst and Young (EY), Hanoi, Viet Nam</div>
+                                                                                                            <div class="resume-date">2022 - 2024</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <ul>
+                                                                                                                    <li>Executed model audits for 2 major banks, performing univariate and multivariate analysis, back testing, and segmentation to ensure accuracy and compliance.</li>
+                                                                                                                    <li>Conducted credit risk modeling for 2 commercial banks by developing Probability of Default, Loss Given Default, and Exposure at Default models.</li>
+                                                                                                                    <li>Processed raw data and analyzed the banks' database consisting of more than 1,000,000 loan data throughout the years.</li>
+                                                                                                                    <li>Collaborated with cross-functional teams to deliver actionable insights and enhance decision-making processes.</li>
+                                                                                                                    
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">Financial Officer & IR Specialist</div>
+                                                                                                            <div class="resume-subtitle">GELEX GROUP, Hanoi, Viet Nam</div>
+                                                                                                            <div class="resume-date">2021 - 2022</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <ul>
+                                                                                                                    <li>Successfully structured and executed a VND 1.8 billion (~$71m) bond offering for domestic and international investors by preparing and evaluating financial documents.</li>
+                                                                                                                    <li>Assisted the IPO of 300 million GEE stocks on UPCOM at 7,500B VND valuation.</li>
+                                                                                                                    <li>Managed post-offering activities for 8 bonds, including asset evaluations, coupon payments, and compliance with related terms and conditions.</li>
+                                                                                                                    <li>Provided detailed financial and operational insights to 8000+ investors, improving understanding of company projects, financial health, and risks.</li>
+                                                                                                                    <li>Designed and executed IR strategies for 12+ investor events, enhancing investor engagement and communication.</li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Education (Second) -->
+                                                                                                <section class="resume-section" id="education">
+                                                                                                    <div class="collapsible-header">
+                                                                                                        <h2 id="education-title">Education</h2>
+                                                                                                        <div class="collapsible-icon"></div>
+                                                                                                    </div>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">University of Washington, Seattle, WA</div>
+                                                                                                            <div class="resume-subtitle">Master of Science in Information Systems</div>
+                                                                                                            <div class="resume-date">Expected graduation: June 2025</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <p>GPA: 3.7</p>
+                                                                                                                <p>Relevant Coursework:</p>
+                                                                                                                <ul>
+                                                                                                                    <li>Machine Learning and Artificial Intelligence for Business Applications</li>
+                                                                                                                    <li>Digital Transformation of Organizations</li>
+                                                                                                                    <li>Information Technology and Organizational Strategy</li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">Rutgers University, New Brunswick, NJ</div>
+                                                                                                            <div class="resume-subtitle">Bachelor of Arts in Actuarial Mathematics</div>
+                                                                                                            <div class="resume-date">Graduated: January 2021</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <p>GPA: 3.5</p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Leadership Experience (Third) -->
+                                                                                                <section class="resume-section" id="leadership">
+                                                                                                    <div class="collapsible-header">
+                                                                                                        <h2 id="leadership-title">Leadership Experience</h2>
+                                                                                                        <div class="collapsible-icon"></div>
+                                                                                                    </div>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">Contestant</div>
+                                                                                                            <div class="resume-subtitle">Venture Capital Investment Competition</div>
+                                                                                                            <div class="resume-date">January 2025</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <ul>
+                                                                                                                    <li>Conducted thorough due diligence on 3 high-potential startups, meticulously analyzing business models, market opportunities, and financial projections to identify optimal investment targets.</li>
+                                                                                                                    <li>Developed comprehensive strategic investment theses through rigorous evaluation of business potential, competitive positioning, valuation metrics, execution feasibility, and exit opportunities.</li>
+                                                                                                                    <li>Delivered compelling investment proposals to managing partners, effectively addressing critical questions and demonstrating deep understanding of venture capital dynamics, valuation methodologies, and risk management.</li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div class="resume-item">
+                                                                                                            <div class="resume-title">Recruitment Officer</div>
+                                                                                                            <div class="resume-subtitle">Rutgers' Actuarial Club, New Brunswick, NJ</div>
+                                                                                                            <div class="resume-date">2020 - 2021</div>
+                                                                                                            <div class="resume-description">
+                                                                                                                <ul>
+                                                                                                                    <li>Increased club membership by 20% in one year by implementing strategic recruitment initiatives.</li>
+                                                                                                                    <li>Organized 2 actuarial career fairs, connecting members with industry professionals and career opportunities.</li>
+                                                                                                                    <li>Facilitated small group projects that boosted members' contribution by 30%.</li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Technical Skills (Collapsible) -->
+                                                                                                <section class="resume-section" id="skills">
+                                                                                                    <div class="collapsible-header">
+                                                                                                        <h2 id="skills-title">Technical Skills</h2>
+                                                                                                        <div class="collapsible-icon"></div>
+                                                                                                    </div>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="skills-categories">
+                                                                                                            <div class="skills-category">
+                                                                                                                <h3>Financial Skills</h3>
+                                                                                                                <div class="skills-container">
+                                                                                                                    <div class="skill-item">Financial Modeling</div>
+                                                                                                                    <div class="skill-item">Discounted Cash Flow (DCF)</div>
+                                                                                                                    <div class="skill-item">Leveraged Buy Out (LBO)</div>
+                                                                                                                    <div class="skill-item">Investment Analysis</div>
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="skills-category">
+                                                                                                                <h3>Technical Tools</h3>
+                                                                                                                <div class="skills-container">
+                                                                                                                    <div class="skill-item">Python</div>
+                                                                                                                    <div class="skill-item">SQL</div>
+                                                                                                                    <div class="skill-item">R</div>
+                                                                                                                    <div class="skill-item">Machine Learning</div>
+                                                                                                                    <div class="skill-item">Data Analysis</div>
+                                                                                                                </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="skills-category">
+                                                                                                                <h3>Professional Skills</h3>
+                                                                                                                <div class="skill-with-level">
+                                                                                                                    <div class="skill-header">
+                                                                                                                        <span class="skill-name">Financial Analysis</span>
+                                                                                                                        <span class="skill-level">95%</span>
+                                                                                                                    </div>
+                                                                                                                    <div class="progress-bar">
+                                                                                                                        <div class="progress" style="width: 0%;" data-width="95%"></div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="skill-with-level">
+                                                                                                                    <div class="skill-header">
+                                                                                                                        <span class="skill-name">Data Visualization</span>
+                                                                                                                        <span class="skill-level">85%</span>
+                                                                                                                    </div>
+                                                                                                                    <div class="progress-bar">
+                                                                                                                        <div class="progress" style="width: 0%;" data-width="85%"></div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="skill-with-level">
+                                                                                                                    <div class="skill-header">
+                                                                                                                        <span class="skill-name">Risk Modeling</span>
+                                                                                                                        <span class="skill-level">90%</span>
+                                                                                                                    </div>
+                                                                                                                    <div class="progress-bar">
+                                                                                                                        <div class="progress" style="width: 0%;" data-width="90%"></div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Certifications (Collapsible) -->
+                                                                                                <section class="resume-section" id="certifications">
+                                                                                                    <div class="collapsible-header">
+                                                                                                        <h2 id="certifications-title">Certifications</h2>
+                                                                                                        <div class="collapsible-icon"></div>
+                                                                                                    </div>
+                                                                                                    <div class="collapsible-content">
+                                                                                                        <div class="skills-container">
+                                                                                                            <div class="skill-item">Certified Global Business Analyst (AFA)</div>
+                                                                                                            <div class="skill-item">Macroeconomics Analysis for Investment (AFA)</div>
+                                                                                                            <div class="skill-item">My Portfolio (AFA)</div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Contact Information (No phone number) -->
+                                                                                                <section class="resume-section" id="contact" aria-labelledby="contact-title">
+                                                                                                    <h2 class="section-title" id="contact-title">Contact Information</h2>
+
+                                                                                                    <div class="contact-info">
+                                                                                                        <div class="contact-item">
+                                                                                                            <span class="contact-icon">📍</span>
+                                                                                                            <span>Ho Chi Minh City, Viet Nam</span>
+                                                                                                        </div>
+                                                                                                        <div class="contact-item">
+                                                                                                            <span class="contact-icon">✉️</span>
+                                                                                                            <span>tiw25lhmt@uw.edu</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </section>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </main>
+
+                                                                                    <footer>
+                                                                                        <div class="container">
+                                                                                            <div class="social-links">
+                                                                                                <a href="https://www.linkedin.com/in/tien-lai-3aba6a193/" class="social-link" target="_blank" aria-label="LinkedIn Profile">
+                                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                                                                                    </svg>
+                                                                                                </a>
+                                                                                                <a href="#" class="social-link" target="_blank" aria-label="GitHub Profile">
+                                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                                                                                    </svg>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <p>&copy; 2025 Tien Lai. All Rights Reserved.</p>
+                                                                                        </div>
+                                                                                    </footer>
+
+                                                                                    <!-- Back to Top Button -->
+                                                                                    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                                            <polyline points="18 15 12 9 6 15"></polyline>
+                                                                                        </svg>
+                                                                                    </a>
+
+                                                                                    <!-- Dark/Light Mode Toggle -->
+                                                                                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dark-icon">
+                                                                                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                                                                        </svg>
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light-icon" style="display: none;">
+                                                                                            <circle cx="12" cy="12" r="5"></circle>
+                                                                                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                                                                                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                                                                                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                                                                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                                                                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                                                                                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                                                                                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                                                                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                                                                        </svg>
+                                                                                    </button>
+
+                                                                                    <script>
+                                                                                        // Wait for DOM to be fully loaded
+                                                                                        // Replace your entire <script> section with this code
+                                                                                        document.addEventListener('DOMContentLoaded', function() {
+                                                                                            // Collapsible sections functionality
+                                                                                            const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+
+                                                                                            // Add click event listeners to all headers
+                                                                                            collapsibleHeaders.forEach(header => {
+                                                                                                header.addEventListener('click', function() {
+                                                                                                    // Toggle active class
+                                                                                                    this.classList.toggle('active');
+
+                                                                                                    // Get content element
+                                                                                                    const content = this.nextElementSibling;
+
+                                                                                                    // Toggle content visibility
+                                                                                                    if (this.classList.contains('active')) {
+                                                                                                        content.style.maxHeight = content.scrollHeight + "px";
+                                                                                                    } else {
+                                                                                                        content.style.maxHeight = '0';
+                                                                                                    }
+                                                                                                });
+                                                                                            });
+
+                                                                                            // Open the first section by default (Professional Experience)
+                                                                                            if (collapsibleHeaders.length > 0) {
+                                                                                                const firstSection = collapsibleHeaders[0];
+                                                                                                firstSection.classList.add('active');
+                                                                                                const firstContent = firstSection.nextElementSibling;
+                                                                                                if (firstContent) {
+                                                                                                    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+                                                                                                }
+                                                                                            }
+
+                                                                                            // Header scroll effect
+                                                                                            const header = document.getElementById('header');
+
+                                                                                            window.addEventListener('scroll', function() {
+                                                                                                // Header shrink effect
+                                                                                                if (window.scrollY > 100) {
+                                                                                                    header.classList.add('scrolled');
+                                                                                                } else {
+                                                                                                    header.classList.remove('scrolled');
+                                                                                                }
+
+                                                                                                // Back to top button visibility
+                                                                                                const backToTop = document.getElementById('backToTop');
+                                                                                                if (backToTop) {
+                                                                                                    if (window.pageYOffset > 300) {
+                                                                                                        backToTop.classList.add('visible');
+                                                                                                    } else {
+                                                                                                        backToTop.classList.remove('visible');
+                                                                                                    }
+                                                                                                }
+
+                                                                                                // Animate skill bars when they come into view
+                                                                                                animateSkillBars();
+                                                                                            });
+
+                                                                                            // Function to animate skill bars
+                                                                                            function animateSkillBars() {
+                                                                                                const skillBars = document.querySelectorAll('.progress');
+                                                                                                const windowHeight = window.innerHeight;
+
+                                                                                                skillBars.forEach(bar => {
+                                                                                                    const barPosition = bar.getBoundingClientRect().top;
+                                                                                                    if (barPosition < windowHeight * 0.9) {
+                                                                                                        const width = bar.getAttribute('data-width');
+                                                                                                        bar.style.width = width;
+                                                                                                    }
+                                                                                                });
+                                                                                            }
+
+                                                                                            // Smooth scroll to top
+                                                                                            const backToTop = document.getElementById('backToTop');
+                                                                                            if (backToTop) {
+                                                                                                backToTop.addEventListener('click', function(e) {
+                                                                                                    e.preventDefault();
+                                                                                                    window.scrollTo({
+                                                                                                        top: 0,
+                                                                                                        behavior: 'smooth'
+                                                                                                    });
+                                                                                                });
+                                                                                            }
+
+                                                                                            // Statistics counter animation with swipe effect
+                                                                                            function animateCounters() {
+                                                                                                const counters = document.querySelectorAll('.stat-number');
+
+                                                                                                counters.forEach(counter => {
+                                                                                                    // Extract the target number
+                                                                                                    let target = counter.textContent;
+                                                                                                    let prefix = '';
+                                                                                                    let suffix = '';
+                                                                                                    let numericValue = 0;
+
+                                                                                                    // Handle special cases like '$71M+'
+                                                                                                    if (target.includes('$')) {
+                                                                                                        prefix = '$';
+                                                                                                        target = target.replace('$', '');
+                                                                                                    }
+
+                                                                                                    if (target.includes('+')) {
+                                                                                                        suffix = '+';
+                                                                                                        target = target.replace('+', '');
+                                                                                                    }
+
+                                                                                                    if (target.includes('M')) {
+                                                                                                        suffix = 'M' + suffix;
+                                                                                                        target = target.replace('M', '');
+                                                                                                    }
+
+                                                                                                    numericValue = parseFloat(target);
+                                                                                                    counter.textContent = prefix + '0' + suffix;
+
+                                                                                                    // Animation variables
+                                                                                                    const duration = 2000; // 2 seconds
+                                                                                                    const step = numericValue / (duration / 16); // 60fps
+                                                                                                    let current = 0;
+
+                                                                                                    // Animation function
+                                                                                                    const counterAnimation = setInterval(() => {
+                                                                                                        current += step;
+                                                                                                        if (current >= numericValue) {
+                                                                                                            current = numericValue;
+                                                                                                            clearInterval(counterAnimation);
+                                                                                                        }
+                                                                                                        counter.textContent = prefix + current.toFixed(current % 1 === 0 ? 0 : 1) + suffix;
+                                                                                                    }, 16);
+                                                                                                });
+                                                                                            }
+
+                                                                                            // Trigger counter animation when statistics are in view
+                                                                                            const statistics = document.querySelector('.statistics');
+                                                                                            if (statistics) {
+                                                                                                const observer = new IntersectionObserver((entries) => {
+                                                                                                    entries.forEach(entry => {
+                                                                                                        if (entry.isIntersecting) {
+                                                                                                            animateCounters();
+                                                                                                            observer.unobserve(entry.target);
+                                                                                                        }
+                                                                                                    });
+                                                                                                }, { threshold: 0.5 });
+
+                                                                                                observer.observe(statistics);
+                                                                                            }
+
+                                                                                            // Dark/Light Mode Toggle
+                                                                                            const themeToggle = document.getElementById('themeToggle');
+                                                                                            if (themeToggle) {
+                                                                                                const darkIcon = themeToggle.querySelector('.dark-icon');
+                                                                                                const lightIcon = themeToggle.querySelector('.light-icon');
+
+                                                                                                // Check for saved theme preference
+                                                                                                const savedTheme = localStorage.getItem('theme');
+                                                                                                if (savedTheme === 'light') {
+                                                                                                    document.body.classList.add('light-mode');
+                                                                                                    darkIcon.style.display = 'none';
+                                                                                                    lightIcon.style.display = 'block';
+                                                                                                }
+
+                                                                                                // Toggle theme
+                                                                                                themeToggle.addEventListener('click', () => {
+                                                                                                    document.body.classList.toggle('light-mode');
+
+                                                                                                    if (document.body.classList.contains('light-mode')) {
+                                                                                                        localStorage.setItem('theme', 'light');
+                                                                                                        darkIcon.style.display = 'none';
+                                                                                                        lightIcon.style.display = 'block';
+                                                                                                    } else {
+                                                                                                        localStorage.setItem('theme', 'dark');
+                                                                                                        darkIcon.style.display = 'block';
+                                                                                                        lightIcon.style.display = 'none';
+                                                                                                    }
+                                                                                                });
+                                                                                            }
+                                                                                        });
+                                                                                    </script>
+                                                                                </body>
+                                                                                </html>
